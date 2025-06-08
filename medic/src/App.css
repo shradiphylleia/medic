@@ -1,0 +1,20 @@
+.inputPanel img {
+  width: 22px;
+  height: 22px;
+
+}
+
+.inputPanel input {
+  border: 1px grey solid;
+  border-radius: 4px;
+  height: 2vh;
+  width: auto;
+  padding: 8px;
+  margin-left: 1vw;
+}
+
+.inputPanel{
+    border: 1px solid black;
+    width: 20vw;
+    height: 5vh;
+}
