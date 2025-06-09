@@ -1,20 +1,164 @@
+.bigContainer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 30vw;
+    height: 70vh;
+    margin-left: 35vw;
+    padding: 2vh;
+    margin-top: 10vh;
+    border-radius: 11px;
+}
+.bigContainer .heading{
+    margin-left: 12vw;
+    font-size: 20px;
+}
+
+.inputPanel {
+  display: flex;
+  align-items: center; 
+  width: 20vw;
+  height: 5vh;
+  padding: 0 8px;
+  margin-left: 4vw;
+}
+
 .inputPanel img {
   width: 22px;
   height: 22px;
-
 }
 
 .inputPanel input {
-  border: 1px grey solid;
-  border-radius: 4px;
-  height: 2vh;
-  width: auto;
+  border: 1.3px rgb(195, 195, 195) solid;
+  border-radius: 5px;
+  height: 3vh;
+  padding: 5px;
+  margin-left: 1vw;
+  flex: 1; 
+}
+
+.mediumContainer{
+    width: 21vw;
+    height: 41vh;
+    border: 1px rgb(195, 195, 195) solid;
+    border-radius: 5px;
+    margin-left: 4.6vw;
+    margin-top: 3vh;
+}
+
+.burnsContainer, .bleedingContainer, .cprContainer, .dogContainer, .snakeContainer {
+  text-decoration: none;
+  display: flex;
+  align-items: center; 
+  cursor: pointer;      
   padding: 8px;
+  width: 19vw;  
+  height: 20px;
+}
+
+.burnsContainer .ointment {
+  width: 37px;
+  height: 29px;
+  margin:0 0.2vw;
+}
+
+ .bleedingContainer .next, .cprContainer .next, .dogContainer .next, .snakeContainer .next, .accidentContainer .next {
+  width: 25px;
+  height: 22px;
+  margin-left: 11vw;
+
+}
+
+.burnsContainer .next{
+  width: 25px;
+  height: 22px;
+  margin-left: 11.2vw;
+}
+
+.burnsText, .bleedingText , .cprText, .dogText, .snakeText, .accidentText {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 0.3vw;
+}
+
+.bleeding{
+  width: 22px;
+  height: 20px;
+}
+
+.bleedingContainer .next{
+  margin-left:10.4vw;
+}
+
+.bleedingText{
+  margin-left: 0.9vw;
+}
+
+.cpr, .accident{
+  width: 35px;
+  height:26.5px;
+  margin-left: 0.3vw;
+}
+
+
+.cprContainer .next {
+  margin-left: 12.6vw;
+}
+
+.cprText{
+  margin-left: 0.6vw;
+}
+
+.dog{
+  width: 40px;
+  height: 31.5px;
+}
+
+
+.dogContainer .next{
+  margin-left: 10vw;
+}
+
+.snake{
+  width: 20px;
+  height: 20px;
+  margin-left: 0.5vw;
+}
+
+.snakeContainer .next{
+  margin-left: 9vw;
+}
+
+.snakeContainer ,.accidentContainer{
+   white-space: nowrap;
+}
+
+.cprContainer{
+  padding:5px;
+}
+
+.snakeText{
   margin-left: 1vw;
 }
 
-.inputPanel{
-    border: 1px solid black;
-    width: 20vw;
-    height: 5vh;
+.burnsContainer{
+  margin-top: .3vh;
+  height: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(187, 187, 187);
+}
+
+.accidentContainer{
+  text-decoration: none;
+}
+
+.accidentContainer .next{
+  margin-left: 7vw;
+}
+
+.accident{
+  margin-left: 1vw;
 }
