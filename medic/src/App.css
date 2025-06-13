@@ -35,6 +35,36 @@
   flex: 1; 
 }
 
+.inputPanel {
+  position: relative; 
+  width: 317px;  
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.suggestions li {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+
 .mediumContainer{
     width: 21vw;
     height: 41vh;
