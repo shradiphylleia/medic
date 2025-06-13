@@ -8,7 +8,7 @@ export default function Choking() {
     <div>
       <Container className="container">
         <Container className="main">
-          <Heading className="burns" text="Choking" />
+          <Heading className="choking" text="Choking" />
 
           <img className="kit" src="./src/assets/kit.png" alt="medical kit" />
 

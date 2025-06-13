@@ -8,7 +8,7 @@ export default function Fracture() {
     <div>
       <Container className="container">
         <Container className="main">
-          <Heading className="burns" text="Fracture" />
+          <Heading className="fracture" text="Fracture" />
 
           <img className="kit" src="./src/assets/kit.png" alt="medical kit" />
 

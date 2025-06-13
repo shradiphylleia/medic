@@ -43,10 +43,11 @@
 .suggestions {
   position: absolute;
   top: 100%; 
-  left: 0;
-  width: 100%;
+  left: 12.6%;
+  width: 85%;
   background: white;
-  border: 1px solid #ddd;
+  border: 1px solid #2c2b2b;
+  border-radius: 3px;
   max-height: 150px;
   overflow-y: auto;
   z-index: 10;
@@ -191,4 +192,14 @@ hr {
 
 .accident{
   margin-left: 1vw;
+}
+
+.choking, .drown, .fainting, .fracture, .burns, .head, .heat,.heart, .hypothermia, .nosebleed, .poison{
+  margin-left: 11.8vw;
+  font-size: 12px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.head, .heat, .heart, .hypothermia{
+  margin-left: 10.5vw;
 }

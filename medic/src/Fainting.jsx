@@ -8,7 +8,7 @@ export default function Fainting() {
     <div>
       <Container className="container">
         <Container className="main">
-          <Heading className="burns" text="Fainting" />
+          <Heading className="fainting" text="Fainting" />
 
           <img className="kit" src="./src/assets/kit.png" alt="medical kit" />
 

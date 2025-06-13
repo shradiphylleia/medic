@@ -26,6 +26,7 @@ import Poisoning from './Poisoning.jsx'
 import Seizure from './Seizure.jsx'
 import Sprain from './Sprain.jsx'
 import Stroke from './Stroke.jsx'
+import Heat from './Heat.jsx'
 
 const router=createBrowserRouter([
   {path:'/', element:<App/>},
@@ -44,7 +45,8 @@ const router=createBrowserRouter([
   {path:'/hypothermia',element: <Hypothermia/>},
   {path: '/electric-shock',element: <ElectricShock/>},
   {path: '/head-injury',element: <Head/>},
-  {path: '/heatstroke',element:<Heart/>},
+  {path: '/heatstroke',element:<Heat/>},
+  {path: '/heartstroke', element:<Heart/> },
   {path: '/nosebleed' ,element: <Nosebleed/>},
   {path: 'poisoning', element: <Poisoning/>},
   {path: '/seizure' , element: <Seizure/>},

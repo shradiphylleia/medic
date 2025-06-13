@@ -8,7 +8,7 @@ export default function Accident() {
     <div>
       <Container className="container">
         <Container className="main">
-          <Heading className="bleeding-content" text="Accient"></Heading>
+          <Heading className="bleeding-content" text="Accident"></Heading>
 
           <img
             className="ambulance"

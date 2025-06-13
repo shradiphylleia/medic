@@ -26,19 +26,18 @@ export default function Burns() {
         <Container className="content">
           <ol>
             <li>
-              Do not apply ointments, creams, or butter.It can trap heat and
-              worsen the burn
+              Do not apply ointments, creams, or butter.
             </li>
             <li>
-              Do not apply ice or ice water.It can damage the skin further
+              Do not apply ice or ice water.
             </li>
             <li>
-              Do not break blisters.It increases the risk of infection
+              Do not break blisters.
             </li>
             <li>
               Do not use fluffy materials or adhesives directly on the burn
             </li>
-            <li>Do not delay seeking medical attention for serious burns</li>
+            <li>Seek medical attention for serious burns</li>
           </ol>
         </Container>
       </Container>

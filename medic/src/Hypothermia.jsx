@@ -8,7 +8,7 @@ export default function Hypothermia() {
     <div>
       <Container className="container">
         <Container className="main">
-          <Heading className="burns" text="Hypothermia" />
+          <Heading className="hypothermia" text="Hypothermia" />
 
           <img className="kit" src="./src/assets/kit.png" alt="medical kit" />
 

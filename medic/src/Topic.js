@@ -79,9 +79,9 @@ export const Topics=[
   },
   {
     id: "heart-attack",
-    keywords: ["heart attack", "chest pain", "myocardial infarction", "cardiac"],
+    keywords: ["heart attack", "chest pain", "myocardial infarction", "cardiac", "cardiac arrest", "left chest"],
     title: "Heart Attack",
-    url: "/cpr",
+    url: "/heartstroke",
   },
   {
     id: "heatstroke",
