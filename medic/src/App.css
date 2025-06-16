@@ -1,7 +1,7 @@
 .bigContainer{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 30vw;
-    height: 70vh;
+    height: 75vh;
     margin-left: 35vw;
     padding: 2vh;
     margin-top: 10vh;
@@ -68,14 +68,14 @@
 
 .mediumContainer{
     width: 21vw;
-    height: 41vh;
+    height: 40vh;
     border: 1px rgb(195, 195, 195) solid;
     border-radius: 5px;
     margin-left: 4.6vw;
     margin-top: 3vh;
 }
 
-.burnsContainer, .bleedingContainer, .cprContainer, .dogContainer, .snakeContainer {
+.burnsContainer, .bleedingContainer, .cprContainer, .dogContainer, .kitContainer {
   text-decoration: none;
   display: flex;
   align-items: center; 
@@ -85,13 +85,17 @@
   height: 20px;
 }
 
+.kitContainer{
+  margin-top: 1vh;
+}
+
 .burnsContainer .ointment {
   width: 37px;
   height: 29px;
   margin:0 0.2vw;
 }
 
- .bleedingContainer .next, .cprContainer .next, .dogContainer .next, .snakeContainer .next, .accidentContainer .next {
+ .bleedingContainer .next, .burnsContainer .next,.cprContainer .next, .dogContainer .next, .accidentContainer .next, .kitContainer .next {
   width: 25px;
   height: 22px;
   margin-left: 11vw;
@@ -99,17 +103,23 @@
 }
 
 .burnsContainer .next{
-  width: 25px;
-  height: 22px;
   margin-left: 11.2vw;
 }
 
-.burnsText, .bleedingText , .cprText, .dogText, .snakeText, .accidentText {
+.kitContainer .next{
+  margin-left: 6vw;
+}
+
+.burnsText, .bleedingText , .cprText, .dogText, .accidentText {
   text-decoration: none;
   color: black;
   font-size: 18px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-left: 0.3vw;
+}
+
+.accidentText{
+  margin-left: 0.5vw;
 }
 
 .bleeding{
@@ -125,8 +135,8 @@
   margin-left: 0.9vw;
 }
 
-.cpr, .accident{
-  width: 35px;
+.cpr{
+  width: 34px;
   height:26.5px;
   margin-left: 0.3vw;
 }
@@ -150,17 +160,7 @@
   margin-left: 10vw;
 }
 
-.snake{
-  width: 20px;
-  height: 20px;
-  margin-left: 0.5vw;
-}
-
-.snakeContainer .next{
-  margin-left: 9vw;
-}
-
-.snakeContainer ,.accidentContainer{
+.accidentContainer , .kitContainer{
    white-space: nowrap;
 }
 
@@ -202,4 +202,37 @@ hr {
 
 .head, .heat, .heart, .hypothermia{
   margin-left: 10.5vw;
+}
+
+.footer{
+  display: flex;
+  flex-direction:row;
+  width: 29.5vw;
+  margin-top: 4vh;
+  height: 10vh;
+}
+
+.footer .map, .footer .call{
+  display: block;
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 5px;
+  height: 4vh;
+  padding: 5px;
+  text-decoration: none;
+  margin-left: 4.8vw;
+  font-size: 16px;
+}
+
+.footer .map{
+    width: 7.6vw;
+}
+
+.footer .call{
+    width: 7vw;
+}
+
+.footer .mapText, .callText
+{
+  color: black;
+  margin-left: 2px;
 }

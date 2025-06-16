@@ -27,6 +27,9 @@ import Seizure from './Seizure.jsx'
 import Sprain from './Sprain.jsx'
 import Stroke from './Stroke.jsx'
 import Heat from './Heat.jsx'
+import Map from './Map.jsx'
+import Call from './Call.jsx'
+import Kit from './Kit.jsx'
 
 const router=createBrowserRouter([
   {path:'/', element:<App/>},
@@ -51,7 +54,10 @@ const router=createBrowserRouter([
   {path: 'poisoning', element: <Poisoning/>},
   {path: '/seizure' , element: <Seizure/>},
   {path: '/sprain', element:<Sprain/>}
-  ,{path: '/stroke', element: <Stroke/>}
+  ,{path: '/stroke', element: <Stroke/>},
+  {path: '/map',element:<Map/>},
+  {path: '/call', element: <Call/>},
+  {path:'/kit',element:<Kit/>}
 ])
 
 createRoot(document.getElementById('root')).render(

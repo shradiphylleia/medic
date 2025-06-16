@@ -98,17 +98,6 @@ function App() {
             <span className="cprText">CPR</span>
             <img className="next" src="./src/assets/next.png" alt="next" />
           </Link>
-
-          <hr />
-           <Link to="/snakebite" className="snakeContainer">
-            <img
-              className="snake"
-              src="./src/assets/snake.png"
-              alt="snake"
-            />
-            <span className="snakeText">Snake Bite</span>
-            <img className="next" src="./src/assets/next.png" alt="next" />
-          </Link>
           <hr />
 
           <Link to="/dogbite" className="dogContainer">
@@ -123,16 +112,33 @@ function App() {
 <hr />
           <Link to="/accident" className="accidentContainer">
             <img
-              className="accident"
+              className="cpr"
               src="./src/assets/ambulance.png"
               alt="ambulance"
             />
             <span className="accidentText">Road accident</span>
             <img className="next" src="./src/assets/next.png" alt="next" />
           </Link>
-         
+<hr />
+        <Link to='/kit' className="kitContainer">
+        <img src="./src/assets/bandage.png" alt="bandage" className="cpr" />
+        <span className="accidentText">Make first aid kit</span>
+        <img className="next" src="./src/assets/next.png" alt="next" />
+
+        </Link>
 
         </Container>
+
+        <Container className='footer'>
+          <Link to="/map" className="map">
+          <span className="mapText">nearby hospitals</span>
+          </Link>
+
+          <Link to="/call" className="call">
+          <span className="callText">call help</span>
+          </Link>
+          </Container>
+
       </Container>
     </div>
   );
