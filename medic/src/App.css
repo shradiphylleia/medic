@@ -1,238 +1,298 @@
-.bigContainer{
+.bigContainer {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 30vw;
-    height: 75vh;
-    margin-left: 35vw;
-    padding: 2vh;
-    margin-top: 10vh;
+    width: 90%;
+    max-width: 500px;
+    min-height: 70vh;
+    margin: 5vh auto;
+    padding: 2%;
     border-radius: 11px;
 }
-.bigContainer .heading{
-    margin-left: 12vw;
-    font-size: 20px;
+
+.bigContainer .heading {
+    text-align: center;
+    font-size: clamp(18px, 4vw, 24px);
+    margin-bottom: 1rem;
 }
 
 .inputPanel {
-  display: flex;
-  align-items: center; 
-  width: 20vw;
-  height: 5vh;
-  padding: 0 8px;
-  margin-left: 4vw;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    padding: 8px;
+    margin: 0 auto 1rem;
+    position: relative;
 }
 
 .inputPanel img {
-  width: 22px;
-  height: 22px;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
 }
 
 .inputPanel input {
-  border: 1.3px rgb(195, 195, 195) solid;
-  border-radius: 5px;
-  height: 3vh;
-  padding: 5px;
-  margin-left: 1vw;
-  flex: 1; 
-}
-
-.inputPanel {
-  position: relative; 
-  width: 317px;  
+    border: 1.3px rgb(195, 195, 195) solid;
+    border-radius: 5px;
+    height: 20px;
+    padding: 8px 12px;
+    margin-left: 8px;
+    flex: 1;
+    font-size: 16px;
 }
 
 .suggestions {
-  position: absolute;
-  top: 100%; 
-  left: 12.6%;
-  width: 85%;
-  background: white;
-  border: 1px solid #2c2b2b;
-  border-radius: 3px;
-  max-height: 150px;
-  overflow-y: auto;
-  z-index: 10;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #2c2b2b;
+    border-radius: 3px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-
 .suggestions li {
-  padding: 0.5rem;
-  cursor: pointer;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-size: 16.5px;
 }
 
 .suggestions li:hover {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
-.mediumContainer{
-    width: 21vw;
-    height: 40vh;
+.mediumContainer {
+    width: 100%;
+    min-height: 240px;
     border: 1px rgb(195, 195, 195) solid;
-    border-radius: 5px;
-    margin-left: 4.6vw;
-    margin-top: 3vh;
+    border-radius: 2px;
+    margin: 1rem auto 0;
 }
 
-.burnsContainer, .bleedingContainer, .cprContainer, .dogContainer, .kitContainer {
-  text-decoration: none;
-  display: flex;
-  align-items: center; 
-  cursor: pointer;      
-  padding: 8px;
-  width: 19vw;  
-  height: 20px;
+.burnsContainer, .bleedingContainer, .cprContainer, .dogContainer, .kitContainer, .accidentContainer {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 12px;
+    width: 100%;
+    min-height: 20px;
+    box-sizing: border-box;
 }
 
-.kitContainer{
-  margin-top: 1vh;
+.kitContainer {
+    margin-top: 8px;
 }
 
 .burnsContainer .ointment {
-  width: 37px;
-  height: 29px;
-  margin:0 0.2vw;
+    width: 37px;
+    height: 29px;
+    flex-shrink: 0;
 }
 
- .bleedingContainer .next, .burnsContainer .next,.cprContainer .next, .dogContainer .next, .accidentContainer .next, .kitContainer .next {
-  width: 25px;
-  height: 22px;
-  margin-left: 11vw;
-
+.bleeding {
+    width: 22px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
-.burnsContainer .next{
-  margin-left: 11.2vw;
+.cpr {
+    width: 34px;
+    height: 26.5px;
+    flex-shrink: 0;
 }
 
-.kitContainer .next{
-  margin-left: 6vw;
+.dog {
+    width: 40px;
+    height: 31.5px;
+    flex-shrink: 0;
 }
 
-.burnsText, .bleedingText , .cprText, .dogText, .accidentText {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-left: 0.3vw;
+.accident {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
 }
 
-.accidentText{
-  margin-left: 0.5vw;
+.burnsText, .bleedingText, .cprText, .dogText, .accidentText {
+    text-decoration: none;
+    color: black;
+    font-size: clamp(16px, 3.5vw, 18px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 12px;
+    flex: 1;
 }
 
-.bleeding{
-  width: 22px;
-  height: 20px;
+.next {
+    width: 25px;
+    height: 22px;
+    flex-shrink: 0;
 }
 
-.bleedingContainer .next{
-  margin-left:10.4vw;
+.cprContainer {
+    padding: 12px 16px;
 }
 
-.bleedingText{
-  margin-left: 0.9vw;
+.snakeText {
+    margin-left: 12px;
 }
 
-.cpr{
-  width: 34px;
-  height:26.5px;
-  margin-left: 0.3vw;
-}
-
-
-.cprContainer .next {
-  margin-left: 12.6vw;
-}
-
-.cprText{
-  margin-left: 0.6vw;
-}
-
-.dog{
-  width: 40px;
-  height: 31.5px;
-}
-
-
-.dogContainer .next{
-  margin-left: 10vw;
-}
-
-.accidentContainer , .kitContainer{
-   white-space: nowrap;
-}
-
-.cprContainer{
-  padding:5px;
-}
-
-.snakeText{
-  margin-left: 1vw;
-}
-
-.burnsContainer{
-  margin-top: .3vh;
-  height: 20px;
+.burnsContainer {
+    margin-top: 8px;
 }
 
 hr {
-  border: none;
-  border-top: 1px solid rgb(187, 187, 187);
+    border: none;
+    border-top: 1px solid rgb(187, 187, 187);
+    margin: 8px 16px;
 }
 
-.accidentContainer{
-  text-decoration: none;
+.choking, .drown, .fainting, .fracture, .burns, .head, .heat, .heart, .hypothermia, .nosebleed, .poison {
+    font-size: clamp(11px, 2.5vw, 12px);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 4px 8px;
+    margin: 4px auto;
 }
 
-.accidentContainer .next{
-  margin-left: 7vw;
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0 1rem;
 }
 
-.accident{
-  margin-left: 1vw;
+.footer .map, .footer .call {
+    display: block;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 5px;
+    height: 50px;
+    padding: 12px;
+    text-decoration: none;
+    font-size: clamp(14px, 3vw, 16px);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.choking, .drown, .fainting, .fracture, .burns, .head, .heat,.heart, .hypothermia, .nosebleed, .poison{
-  margin-left: 11.8vw;
-  font-size: 12px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.footer .mapText, .callText {
+    color: black;
+    font-weight: 500;
 }
 
-.head, .heat, .heart, .hypothermia{
-  margin-left: 10.5vw;
+@media screen and (min-width: 768px) {
+    .bigContainer {
+        width: 70%;
+        max-width: 600px;
+        margin: 8vh auto;
+        padding: 2rem;
+    }
+
+    .bigContainer .heading {
+        font-size: 22px;
+        margin-bottom: 2rem;
+    }
+
+    .inputPanel {
+        width: 80%;
+        margin: 0 auto 1.5rem;
+    }
+
+    .mediumContainer {
+        width: 90%;
+        margin: 2rem auto 0;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .footer .map, .footer .call {
+        width: 48%;
+        height: 40px;
+    }
+
+    .burnsText, .bleedingText, .cprText, .dogText, .accidentText {
+        font-size: 18px;
+    }
 }
 
-.footer{
-  display: flex;
-  flex-direction:row;
-  width: 29.5vw;
-  margin-top: 4vh;
-  height: 10vh;
+@media screen and (min-width: 1024px) {
+    .bigContainer {
+        width: 50%;
+        max-width: 400px;
+        margin: 10vh auto;
+        padding: 2.5rem;
+    }
+
+    .bigContainer .heading {
+        font-size: 24px;
+    }
+
+    .inputPanel {
+        width: 70%;
+    }
+
+    .mediumContainer {
+        width: 65%;
+        min-height: 350px;
+    }
+
+    .burnsContainer, .bleedingContainer, .cprContainer, .dogContainer, .kitContainer, .accidentContainer {
+        padding: 15px 20px;
+        min-height: 40px;
+    }
+
+    .footer .map, .footer .call {
+        height: 50px;
+        font-size: 18px;
+    }
 }
 
-.footer .map, .footer .call{
-  display: block;
-  border: 2px solid rgb(255, 0, 0);
-  border-radius: 5px;
-  height: 4vh;
-  padding: 5px;
-  text-decoration: none;
-  margin-left: 4.8vw;
-  font-size: 16px;
+@media screen and (min-width: 1200px) {
+    .bigContainer {
+        width: 40%;
+        max-width: 450px;
+    }
+
+    .inputPanel {
+        width: 60%;
+    }
+
+    .mediumContainer {
+        width: 80%;
+    }
 }
 
-.footer .map{
-    width: 7.6vw;
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
 }
 
-.footer .call{
-    width: 7vw;
-}
-
-.footer .mapText, .callText
-{
-  color: black;
-  margin-left: 2px;
+@media print {
+    .bigContainer {
+        width: 90%;
+        margin: 0;
+        padding: 1rem;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .footer {
+        display: none;
+    }
 }
